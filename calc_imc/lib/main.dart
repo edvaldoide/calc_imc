@@ -52,7 +52,11 @@ class _HomeState extends State<Home> {
               padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
               child: Container(
                 height: 50.0,
-                child: RaisedButton(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.green, // background
+                    onPrimary: Colors.white, // foreground
+                  ),
                   onPressed: () {},
                   child: Text(
                     'Calcular',
@@ -61,7 +65,6 @@ class _HomeState extends State<Home> {
                       fontSize: 25.0,
                     ),
                   ),
-                  color: Colors.green,
                 ),
               ),
             ),
